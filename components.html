@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio - Component library</title>
+<link rel="stylesheet" href="css/Stylesheet.css">
+</head>
+<body>
+<header class="site-header">
+<a class="logo" href="index.html">Studio</a>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a class="active" href="components.html">Components</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main id="main-content" class="container">
+
+<section class="section">
+<h1>Component library</h1>
+<p class="label">Every style on this page comes from the CSS variables in Stylesheet.css.</p>
+</section>
+
+<section class="section">
+<h2>Design tokens</h2>
+<div class="swatches">
+<div class="swatch"><i aria-hidden="true" style="background: var(--primary)"></i><code>--primary #2563eb</code></div>
+<div class="swatch"><i aria-hidden="true" style="background: var(--bg)"></i><code>--bg #f8fafc</code></div>
+<div class="swatch"><i aria-hidden="true" style="background: var(--text)"></i><code>--text #1e293b</code></div>
+</div>
+</section>
+
+<section class="section">
+<h2>Buttons</h2>
+<div class="row">
+<div>
+<button class="btn">Default</button>
+<div class="label">default</div>
+</div>
+<div>
+<button class="btn is-hover">Hover</button>
+<div class="label">hover</div>
+</div>
+<div>
+<button class="btn" disabled>Disabled</button>
+<div class="label">disabled</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Card</h2>
+<article class="card" style="max-width: 360px">
+<h3>Card title</h3>
+<p>A short description that explains what this card is about.</p>
+<a class="btn" href="#">Read more</a>
+</article>
+</section>
+
+<section class="section">
+<h2>Form elements</h2>
+<form class="component-form" action="#" method="get">
+<div class="form-group">
+<label for="comp-name">Name</label>
+<input type="text" id="comp-name" name="name" placeholder="Your name">
+</div>
+<div class="form-group">
+<label for="comp-email">Email</label>
+<input type="email" id="comp-email" name="email" placeholder="you@example.com">
+</div>
+<div class="form-group">
+<label for="comp-course">Course</label>
+<select id="comp-course" name="course">
+<option value="">Select a course</option>
+<option value="html">HTML</option>
+<option value="css">CSS</option>
+<option value="js">JavaScript</option>
+</select>
+</div>
+<div class="form-group">
+<label for="comp-message">Message</label>
+<textarea id="comp-message" name="message" rows="4" placeholder="Write something..."></textarea>
+</div>
+<div class="form-actions">
+<button type="submit" class="btn">Submit</button>
+<button type="reset" class="btn btn-outline">Reset</button>
+</div>
+</form>
+</section>
+
+<section class="section">
+<h2>Alerts</h2>
+<div class="alert alert-success" role="status">Success! Your changes were saved.</div>
+<div class="alert alert-warning" role="status">Warning: your session expires soon.</div>
+<div class="alert alert-error" role="alert">Error: could not connect to the server.</div>
+<div class="alert alert-info" role="status">Info: a new version is available.</div>
+</section>
+
+<section class="section">
+<h2>Modal window</h2>
+<p class="label">Opens without JavaScript, using the :target selector.</p>
+<a class="btn" href="#demo-modal">Open modal</a>
+</section>
+
+<div id="demo-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+<div class="modal-panel">
+<a class="modal-close" href="#" aria-label="Close modal">&times;</a>
+<h2 id="modal-title">Modal title</h2>
+<p>This dialog is shown with CSS only. No JavaScript is used to open or close it.</p>
+<div class="form-actions">
+<a class="btn" href="#">Close</a>
+</div>
+</div>
+</div>
+
+<section class="section">
+<h2>Responsive table</h2>
+<div class="table-wrap">
+<table>
+<caption class="sr-only">Team member names, roles, email addresses, and status</caption>
+<thead>
+<tr><th>Name</th><th>Role</th><th>Email</th><th>Status</th></tr>
+</thead>
+<tbody>
+<tr><td>Ada Lovelace</td><td>Engineer</td>
+<td>ada@example.com</td><td><span class="badge">Active</span></td></tr>
+
+<tr><td>Linus Torvalds</td><td>Maintainer</td>
+<td>linus@example.com</td><td><span class="badge">Active</span></td></tr>
+
+<tr><td>Grace Hopper</td><td>Admiral</td>
+<td>grace@example.com</td><td><span class="badge off">Away</span></td></tr>
+
+<tr><td>Alan Turing</td><td>Researcher</td>
+<td>alan@example.com</td><td><span class="badge">Active</span></td></tr>
+
+</tbody>
+</table>
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer" style="margin-top: 48px">
+<div class="container">Component library</div>
+</footer>
+
+</body>
+</html>
